@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SharedTodoApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="#">Just Did it</a>
+    </div>
+</div>
+<%= yield %>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+<title>SharedTodoApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Project Description" />
+    <meta name="keywords" content="Project Keywords" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>DZDivs</title>
+    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!--[if IE]><link rel="stylesheet" href="css/style-ie.css" type="text/css" /><![endif]-->
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#slider-images').cycle({ 
+                fx:     'fade', 
+                speed:   500, 
+                timeout: 3000,
+                pager: '#slider-nav'
+            });               
+        });
+    </script>        
+</head>
+
+<body>
+<div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="#">Just Did it</a>
+    </div>
+</div>
+<%= yield %>
+
+    <div id="top" class="clearfix">
+        <div class="wrap clearfix">
+            <div id="sitelogo" class="left">
+                <a href="index.html">DZDivs</a>
+            </div><!-- // end #sitelogo -->
+            <div id="topnav" class="right">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#">Layouts</a>
+                        <ul>
+                            <li><a href="page-one-column.html">One Column</a></li>
+                            <li><a href="page-two-column.html">Two Columns</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div><!-- // end #topnav -->
+        </div><!-- // end .wrap -->
+    </div><!-- // end #top -->
+    
+    <div id="splash">
+        <div class="wrap">
+            <div id="splash-slider" class="rounded">
+                <div id="slider-images">
+                    <img src="images/slide-1.jpg" alt="slide"  class="rounded" />
+                    <img src="images/slide-2.jpg" alt="slide"  class="rounded" />
+                    <img src="images/slide-3.jpg" alt="slide"  class="rounded" />
+                    <img src="images/slide-1.jpg" alt="slide"  class="rounded" />
+                    <img src="images/slide-2.jpg" alt="slide"  class="rounded" />
+                    <img src="images/slide-3.jpg" alt="slide"  class="rounded" />                    
+                </div>
+            </div><!-- // end #splash-slider -->
+            <div id="slider-nav"></div>            
+        </div><!-- // end .wrap -->
+    </div><!-- // end #splash -->
+    
+    <div id="main">
+        <div class="content wrap clearfix">
+            <div class="column-a left">
+                <h1>Welcome to DZDivs</h1>
+                <p class="pull-top">Blah</p>                
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                sunt explicabo. </p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                sunt explicabo. </p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                sunt explicabo. </p>            
+            </div><!-- // end .column-a -->
+            <div class="column-b right">
+                <h2>Sidebar</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                sunt explicabo. </p>
+            </div><!-- // end .column-b -->
+        </div><!-- // end .wrap -->
+    </div><!-- // end #main -->
+    
+    <div id="footer">
+        <div class="wrap content clearfix">
+            <div class="column-c left">
+                <div class="widget">
+                    <h3>Footer</h3>
+                    <ul>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                    </ul>
+                </div><!-- // end .widget -->
+            </div><!-- // end .column-c -->
+            <div class="column-c left push-left">
+                <div class="widget">
+                    <h3>Footer</h3>
+                    <ul>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                    </ul>
+                </div><!-- // end .widget -->
+            </div><!-- // end .column-c -->
+            <div class="column-c left push-left">
+                <div class="widget">
+                    <h3>Footer</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>                       
+                </div><!-- // end .widget -->
+            </div><!-- // end .column-c -->
+            <div class="column-c left push-left">
+                <div class="widget">
+                    <h3>Footer</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>                       
+                </div><!-- // end .widget -->
+            </div><!-- // end .column-c -->            
+        </div><!-- // end .wrap -->
+        <div id="copyright">
+            <p class="text-center">Free Open Source HTML/CSS Template by <a href="http://www.myhedspace.com">Myhedspace</a> &amp; <a href="http://www.jelontok.com">Jose Erlino Lontok</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+class TodosController < ApplicationController
+  def index
+    @todo_items =  Todo.all # fetches all the rows of Todo model and stores it to @todo items array
+     #render :delete  # shows the delete html page in the index url
+     render :index, :layout => true
+  end
+  def delete
+    @todo_new = Todo.last
+    @todo_new.delete
+  end
+  def add
+	Todo.create(:todo_item => params[:todo_text])
+	redirect_to :action => "index"
+  end
+  
+end
